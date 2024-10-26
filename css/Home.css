@@ -1,0 +1,145 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    background-image: url("https://img.freepik.com/free-vector/abstract-desktop-background-white-geometric-design-vector_53876-140225.jpg?w=996&t=st=1700974633~exp=1700975233~hmac=4e1f6222501cfb0c6c19ede6ff7d75f38970d10f861d3b242f4bc6d4f79069f3");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: calc(100vh - 60px);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Heading */
+.heading h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.technologies img {
+    margin-right: 10px;
+    width: 40px;
+    height: auto;
+}
+
+/* Quote Section */
+.quote {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+    max-width: 90%;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: black;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #5EA8FD;
+}
+
+/* Hire Button */
+.hiring button {
+    background-color: #A6C9FF;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hiring button:hover {
+    background-color: rgb(237, 84, 84);
+}
+
+/* Profile Block */
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.linkedin img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 1200px) {
+    .heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .quote {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .block {
+        max-width: 90%;
+    }
+
+    .social-links a {
+        padding: 8px;
+    }
+    
+    .hiring button {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .quote {
+        font-size: 0.9rem;
+    }
+
+    .social-links a {
+        padding: 6px;
+        font-size: 1rem;
+    }
+
+    .linkedin img {
+        max-width: 90%;
+    }
+}
